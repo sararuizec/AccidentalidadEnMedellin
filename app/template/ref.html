@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link href="{{ url_for('static', filename='css/styleref.css') }}" rel="stylesheet">
+
+  <title>REFERENCIAS</title>
+</head>
+
+<body id="inicio">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid" id="navbar">
+      <img src="src/logoUnal.svg" alt="" height="70" class="d-inline-block align-text-top">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">INICIO</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('viasializacion')}}">VISUALIZACION</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/prediccion">PREDICCION</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/agrupacion">AGRUPAMIENTO</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/reporte-tecnico">REPORTE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/referencias">REFERENCIAS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="ref">
+    <p>Barrio Vereda 2014. (2021). Retrieved 26 November 2021, from
+      <a
+        href="https://geomedellin-m-medellin.opendata.arcgis.com/datasets/barrio-vereda-2014/explore?location=6.268900%2C-75.595550%2C12.04&showTable=true">
+        https://geomedellin-m-medellin.opendata.arcgis.com/datasets/barrio-vereda-2014/explore?location=6.268900%2C-75.595550%2C12.04&showTable=true</a>
+    </p>
+    <p>MEData. (2021). Retrieved 26 November 2021, from
+      <a href="http://medata.gov.co/dataset/incidentes-viales">
+        http://medata.gov.co/dataset/incidentes-viales</a>
+    </p>
+    <p>Carre&ntildeo, L. (9 de febrero de 2020). La disputa gremial por los aranceles a las prendas de vestir. El
+      Espectador.
+      https://www.elespectador.com/economia/la-disputa-gremial-por-los-aranceles-las-prendas-de-vestir-articulo-903768
+    </p>
+    <p>Mart&iacutenez Rib&oacuten, J. G. T. (2011) Propuesta de metodolog&iacutea para la implementaci&oacuten de la
+      filosof&iacutea Lean (construcci&oacuten
+      esbelta) en proyectos de construcci&oacuten [Tesis de Maestr&iacutea, Universidad Nacional de Colombia].
+      http://bdigital.unal.edu.co/10578/ </p>
+    <p>Riera, M. (20 de enero de 2020). Re: Cancelar hipoteca o invertir [Comentario en foro en l&iacutenea].
+      https://www.helpmycash.com/preguntas/30255/cancelar-hipoteca-o-invertir/</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

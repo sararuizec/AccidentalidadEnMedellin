@@ -1,0 +1,61 @@
+body {
+  background: #232323;
+}
+
+#navbar {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+@media only screen and (min-width: 600px) {
+
+#inicio {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 50% 50%;
+  gap: 100px 0px;
+  grid-template-areas:
+    "text video"
+    "text text2";
+}
+#text {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#video {
+  grid-area: video;
+}
+
+#text2 {
+  grid-area: text2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+}
+#text h1,
+#text2 h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 47px;
+  color: #ffffff;
+}
+
+#text p,
+#text2 p {
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 47px;
+  color: #ffffff;
+}
