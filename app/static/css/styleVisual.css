@@ -11,52 +11,62 @@ body {
   color: #ffffff;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; 
-  grid-template-rows: auto auto; 
-  gap: 20px 0px; 
-  grid-template-areas: 
-    "Tstart Tend type button"
-    "tab tab tab tab";  
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+@media only screen and (min-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 100%;
+    gap: 20px 0px;
+    grid-template-areas:
+      "Tstart Tend type button"
+      "tab tab tab tab";
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    color: #ffffff;
+  }
+
+  .Tstart {
+    grid-area: Tstart;
+  }
+
+  .Tend {
+    grid-area: Tend;
+  }
+
+  .type {
+    grid-area: type;
+  }
+
+  .button {
+    justify-self: center;
+    align-self: center;
+    grid-area: button;
+  }
+
+  .table {
+    grid-area: tab;
+  }
+}
+
+.table label {
   color: #ffffff;
 }
-
-.Tstart {
-  grid-area: Tstart;
+.dataTables_info {
+  color: #ffffff;
 }
-
-.Tend {
-  grid-area: Tend;
-}
-
-.type {
-  grid-area: type;
-}
-
-.button {
-  justify-self: center; 
-  align-self: center; 
-  grid-area: button;
-}
-
-.tab {
-  grid-area: tab;
-}
-
 table {
-    width: 100%;
-    border: 1px solid #ffffff;
- }
- th, td {
-    width: 25%;
-    text-align: left;
-    vertical-align: top;
-    border: 1px solid #ffffff;
-    border-collapse: collapse;
-    padding: 0.3em;
-    font-size: 18px;
- }
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+th,
+td {
+  width: 25%;
+  text-align: left;
+  vertical-align: top;
+  border-collapse: collapse;
+  padding: 0.3em;
+  font-size: 18px;
+}

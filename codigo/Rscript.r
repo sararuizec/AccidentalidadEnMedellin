@@ -1,5 +1,5 @@
 require(pacman)
-pacman::p_load(ggplot2, sf, reader)
+pacman::p_load(ggplot2, sf, readr)
 rm(list = ls())
 
 
@@ -47,8 +47,8 @@ colnames(frecuencia)<-c("BARRIO","CLASE_ACC","DAÑOS","FRECUENCIA")
 
 #crear mapa
 
-castila <- barrios[barrios$BARRIO == "Castilla", ]
+com <- barrios[barrios$NOMBRE_COM == "El Poblado", ]
 
 ggplot() +
   geom_sf(data = barrios,fill="white", color = "black")+
-  geom_sf(data = castila, fill = "red")
+  geom_sf(data = com, fill = "pink")

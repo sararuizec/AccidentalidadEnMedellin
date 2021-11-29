@@ -14,9 +14,9 @@ def home():
 def viasializacion():
 
     df = pd.read_csv("db-acc-med.csv", sep = ";", encoding = 'unicode_escape')
-    clases = df["CLASE"]
+    clases = df["CLASE"].sort_values()
     clases = clases.drop_duplicates().values
-    rows = df.head(n=11).values
+    rows = df.head(n=10).values
 
     if request.method == 'POST':
         Fini = request.form["Dstart"]
