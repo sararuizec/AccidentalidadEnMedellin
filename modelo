@@ -1,0 +1,33 @@
+acc2 <- select(acc_med, CLASE_ACCIDENTE, FECHA)
+print(acc2)
+
+
+volcamientop1 <-  filter(acc2, CLASE_ACCIDENTE %in% c("Volcamiento"))
+volcamiento   <-  select(volcamientop1, FECHA)
+fvolcamiento  <-  as.data.frame(table(FECHAS = volcamiento$FECHA))
+pairs(fvolcamiento)
+cor(fvolcamiento)
+
+atropellop1   <-  filter(acc2, CLASE_ACCIDENTE %in% c("Atropello"))
+atropello     <-  select(atropellop1, FECHA)
+fatropello    <-  as.data.frame(table(FECHAS = atropello$FECHA))
+pairs(fatropello)
+cor(fatropello)
+
+c_ocupantep1  <-  filter(acc2, CLASE_ACCIDENTE %in% c("Caida de Ocupante"))
+c_ocupante    <-  select(c_ocupantep1, FECHA)
+fc_ocupante   <-  as.data.frame(table(FECHAS = c_ocupante$FECHA))
+pairs(fc_ocupante)
+cor(fc_ocupante)
+
+Choquep1      <-  filter(acc2, CLASE_ACCIDENTE %in% c("Choque"))
+Choque        <-  select(Choquep1, FECHA)
+fChoque       <-  as.data.frame(table(FECHAS = Choque$FECHA))
+pairs(fChoque)
+cor(fChoque)
+
+otrop1        <-  filter(acc2, CLASE_ACCIDENTE %in% c("Otro"))
+otro          <-  select(otrop1, FECHA)
+fotro         <-  as.data.frame(table(FECHAS = otro$FECHA))
+pairs(fotro)
+cor(fotro)
